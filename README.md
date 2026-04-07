@@ -1,5 +1,5 @@
 # pop-note
-A single editable note that you can pop up and hide with a keybinding. Requires X11 (easy fix tho)
+A single editable note that you can pop up and hide with a keybinding. Requires X11 (normally used with linux) (easy fix tho)
 
 Unreviewed ai-generated code.
 
@@ -33,7 +33,13 @@ I might however add the features I want.
 Only works with x11 because tkinter window raising does not work reliably with KDE so I had to use wmctrl to raise windows. Apparently there are different tools for every wayland compositor so if you use one of those you could special case this and send it to me.
 
 ## Installation
-pipx install node-
+```
+pipx install pop-note
+```
+Make sure `wmctrl` and you are using `X11`. If you are not using X11 you can likely edit the wmctrl to something specific to your window manager.
+
+## Usage
+`pop-note` will pop up the note and hide it. I have a keyboard shortcut in KDE for this. 
 
 ## About me
 I am @readwith. If you are interested in note-taking [read this](https://readwithai.substack.com/p/note-taking-with-obsidian-much-of)
