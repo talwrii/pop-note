@@ -1,0 +1,29 @@
+[project]
+name = "pop-note"
+version = "0.1.0"
+description = "A single note you can pop up and hide with a keybinding."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["notes", "popup", "quake", "tkinter"]
+dependencies = [
+    "tomli; python_version < '3.11'",
+]
+
+[[project.authors]]
+name = "@readwithai"
+email = "talwrii@gmail.com"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/talwrii/pop-note"
+Repository = "https://github.com/talwrii/pop-note"
+Issues = "https://github.com/talwrii/pop-note/issues"
+
+[project.scripts]
+pop-note = "pop_note.main:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
